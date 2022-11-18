@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.time.Month;
 
 //poletko do testowania, samo w sobie nie ma nic wspólnego z patternem Buildera
-public class Client {
+public class BuilderClient {
 
     public static void main(String[] args) {
         //0: bez buildera:
