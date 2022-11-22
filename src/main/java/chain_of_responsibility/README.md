@@ -13,7 +13,7 @@ sposobów: z pliku, z bazy danych, z "chmury", albo użyć wartości domyślnej.
 Każde ogniwo naszego łańcucha przedstawia jedną WYKLUCZAJĄCĄ próbę obsługi zadania: jeśli się uda, pozostałe próby są
 niepotrzebne.
 
-W _luźniejszym_ znaczeniu, CoR oznacza także dowolny proces składający się z wielu etapów pośrednich (A -> B -> C). Choć
+W _luźniejszym_ znaczeniu, CoR oznacza także dowolny proces składający się z wielu sekwencyjnych etapów pośrednich (A -> B -> C). Choć
 taka implementacja jest niemal identyczna, NIE POWINNO SIĘ stosować wobec niej nazwy "Chain of Responsibility", ponieważ
 w CoR ważna jest "niezależność" ogniw, tj. fakt, że każde z nich stawowi niejako kolejną, odrębną próbę rozwiązania
 problemu.
