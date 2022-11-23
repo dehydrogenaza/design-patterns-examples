@@ -3,7 +3,7 @@
 Builder to klasa, która upraszcza tworzenie bardzo skomplikowanych obiektów. Najprostszym zastosowaniem są klasy o
 bardzo dużej liczbie pól, które musielibyśmy uzupełnić w konstruktorze. Zamiast tego, do konstruktora takiej klasy
 wrzucamy jedynie specjalnie stworzonego Buildera, którego wcześniej w wygodny sposób inicjalizujemy w wielu metodach. W
-pewnym sensie, "rozbijamy" ogromny konstruktor na serię mniejszych metod.
+pewnym sensie "rozbijamy" ogromny konstruktor na serię mniejszych metod.
 
 W tworzeniu Buildera przyjęło się, że każda "cząstkowa" metoda budująca zwraca referencję do "swojego" obiektu (
 czyli `this`), co umożliwia *chaining* metod. Reszta to detale implementacyjne (jak w każdym Patternie, jest kilka
