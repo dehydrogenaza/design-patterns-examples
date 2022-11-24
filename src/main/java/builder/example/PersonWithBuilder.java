@@ -40,7 +40,7 @@ public class PersonWithBuilder extends PersonBase {
         //Tutaj postanowiłem przedstawić "tradycyjny" Pattern.
         private int id;
 
-        //Builder pozwala łatwo stworzyć wartość domyślne dla pól. Tutaj postanowiłem, że jeśli user nie poda żadnego
+        //Builder pozwala łatwo stworzyć wartość domyślne dla pól. Tutaj postanowiłem, że jeśli developer nie poda żadnego
         // 'description', to zostanie użyta wartość zapisana w stałej DEFAULT_DESCRIPTION. Gdybyśmy chcieli to robić
         // w konstruktorze, to musielibyśmy albo stworzyć oddzielny konstruktor, który nie przyjmuje 'description',
         // albo przekazywać 'null' jako parametr, co jest Złą Praktyką™.
@@ -91,7 +91,7 @@ public class PersonWithBuilder extends PersonBase {
         // przyszłości debugowanie programu, bo zawsze wiemy, że problem nie wynika z wewnętrznego stanu obiektu, a z
         // czegoś, co z nim próbujemy zrobić.
         //
-        //W tym przypadku, jeśli user poda złe wartości, są one po prostu ignorowane (z wyświetleniem ostrzeżenia), ale
+        //W tym przypadku, jeśli developer poda złe wartości, są one po prostu ignorowane (z wyświetleniem ostrzeżenia), ale
         // oczywiście to jak problem zostanie rozwiązany już zależy od implementacji. Inny przykład walidacji
         // przedstawiłem w metodzie .create.
         public Builder withMeasurements(double heightInCMs, double weightInKGs) {

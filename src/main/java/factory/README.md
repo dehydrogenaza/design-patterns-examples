@@ -41,7 +41,7 @@ oddzielnej klasy, tworzenie fabryki jest w `FactoryClient`.
 ### Zalety
 
 - zwiększona abstrakcja (a zatem elastyczność) tworzenia obiektów
-- user ma pewność, że tworzone obiekty będą ze sobą "kompatybilne" (mogą być stosowane wymiennie)
+- developer ma pewność, że tworzone obiekty będą ze sobą "kompatybilne" (mogą być stosowane wymiennie)
 - ułatwiona rozszerzalność kodu (jeśli chcemy np. dodać kolejny podtyp klasy bazowej), wspiera regułę **Open/Closed**
     - dodawanie podtypów nie psuje istniejącego kodu klienckiego
 - wspiera regułę **Single Responsibility** dzięki wyodrębnieniu kodu tworzącego obiekty

@@ -8,5 +8,5 @@ public enum Type {
     TRIANGLE
 }
 //w inny sposób (dla pokazania) zrealizowałem kolory: są to po prostu Stringi (a też mógłby być enum), minus jest
-// taki że user musi pamiętać jakie Stringi są dozwolone (IDE zwykle nie umie podpowiedzieć), a ponadto trzeba
+// taki że developer musi pamiętać jakie Stringi są dozwolone (IDE zwykle nie umie podpowiedzieć), a ponadto trzeba
 // sprawdzać czy podany String na pewno jest obsługiwany (enum robi to za nas)
