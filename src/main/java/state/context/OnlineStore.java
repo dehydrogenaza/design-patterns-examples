@@ -92,7 +92,7 @@ public class OnlineStore {
     //Po pierwsze, jest to przykład Settera, który wreszcie uzasadnia istnienie Setterów, czyli faktycznie robi coś
     // innego niż przypisanie wartości do pola.
     //Po drugie, ta metoda obrazuje zmianę Stanu przez sam Kontekst. W tym wzorcu nie jest ustalone, czy zmieniać
-    // Stan mogą JEDYNIE INNE STANU, JEDYNIE KONTEKST, czy też JEDNO I DRUGIE. Gdybym miał faktycznie implementować
+    // Stan mogą JEDYNIE INNE STANY, JEDYNIE KONTEKST, czy też JEDNO I DRUGIE. Gdybym miał faktycznie implementować
     // ten wzorzec, zależnie od wygody wybrałbym raczej opcję 1 lub 2 (by być konsekwentnym). Ponieważ tutaj chodziło
     // o przykład, zastosowany jest wariant 3.
     public void setShippingAddress(String address) {
