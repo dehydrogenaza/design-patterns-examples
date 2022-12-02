@@ -3,6 +3,7 @@ package singleton;
 import singleton.examples.eager.*;
 import singleton.examples.lazy.*;
 
+//Klasa do testów.
 public class SingletonClient {
 
     public static void main(String[] args) {

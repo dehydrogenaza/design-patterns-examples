@@ -4,16 +4,34 @@ package singleton.examples.eager;
 import java.util.Map;
 import java.util.TreeMap;
 
+//Wersja nie różni się funkcjonalnie od EagerAccounting, z wyjątkiem tego, że wykorzystuje enuma.
+//
+//Taki enum powinien mieć tylko jedną wartość (zwykle zwaną INSTANCE). Jest ona domyślnie inicjalizowana statycznie
+// przez Javę (i zawsze ma tylko jedną kopię). Nie musimy tworzyć gettera — do instancji odnosimy się po prostu przez
+// INSTANCE.
+//
+//Poniższy przykład może wydawać się długi, ponieważ DUPLIKUJE zawartość AccountingBase. Zwróćcie uwagę, że
+// EagerEnumAccounting NIE DZIEDZICZY (ponieważ enumy nie mogą dziedziczyć). Akurat tutaj prowadzi to do duplikacji
+// kodu, ale zwykle nie jest problemem, ponieważ Singletony rzadko kiedy dziedziczą po innych klasach.
 public enum EagerEnumAccounting {
-    INSTANCE;
+    INSTANCE; //Wartość, przez którą odnosimy się do instancji.
 
-    private final Map<String, Integer> payroll;
-    private long funds;
-
+    //Konstruktor ENUMa jest domyślnie prywatny.
     EagerEnumAccounting() {
         this.payroll = makeSomePayroll();
         this.funds = 0;
     }
+
+
+
+    //* * *
+    //Reszta klasy jest identyczna co AccountingBase
+    //* * *
+
+
+    private final Map<String, Integer> payroll;
+    private long funds;
+
 
     public void pay() {
         System.out.println("\nWYPŁACAM Z: " + getClass().getSimpleName());

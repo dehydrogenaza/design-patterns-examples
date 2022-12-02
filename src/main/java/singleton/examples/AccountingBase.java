@@ -3,8 +3,14 @@ package singleton.examples;
 import java.util.Map;
 import java.util.TreeMap;
 
+//Na potrzeby przykładu, poszczególne Singletony dziedziczą ze wspólnej bazy, dzięki czemu nie muszę duplikować ich
+// zawartości. W praktyce jest to raczej rzadko spotykane.
 public abstract class AccountingBase {
+
+    //Mapuje "osobę" do "pensji".
     protected final Map<String, Integer> payroll;
+
+    //Dostępne fundusze na wypłaty.
     private long funds;
 
     protected AccountingBase() {
@@ -12,7 +18,9 @@ public abstract class AccountingBase {
         this.funds = 0;
     }
 
+    //Metoda do testów.
     public void pay() {
+        //Nazwa obecnej implementacji Singletona.
         System.out.println("\nWYPŁACAM Z: " + getClass().getSimpleName());
         displayFunds();
 
@@ -35,6 +43,7 @@ public abstract class AccountingBase {
         System.out.println("Fundusze: " + funds + " PLN");
     }
 
+    //Pomocnicza metoda do stworzenia przykładowych danych testowych.
     private Map<String, Integer> makeSomePayroll() {
         TreeMap<String, Integer> payroll = new TreeMap<>();
         payroll.put("CEO Kowalski", 85000);
