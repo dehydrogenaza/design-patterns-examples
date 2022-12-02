@@ -111,7 +111,7 @@ public class PersonWithBuilder extends PersonBase {
         // punktu wyjścia. Zamiast tego robi się wówczas .create() bez parametrów i dodaje walidację (np. jakieś
         // null checki).
         //
-        //Ponadto, w metodzie upewniam się, że podana data jest właściwa (zgodna z moimi intencjami jako twórcy klasy
+        //Ponadto, w metodzie upewniam się, że podana examples jest właściwa (zgodna z moimi intencjami jako twórcy klasy
         // PersonWithBuilder). Jeśli nie, to tutaj po prostu rzucam wyjątek - jest typu unchecked, więc nie muszę go
         // łapać.
         public PersonWithBuilder create(int id, LocalDate dateOfBirth) {
